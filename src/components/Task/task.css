@@ -13,8 +13,9 @@
     width: 65%;
     text-align: start;
     font-size: 0.7rem;
-    color: rgb(90, 90, 90);
+    color: #838fe7;
 }
+
 .bi {
     margin: 0 0.2rem;
     cursor: pointer;
@@ -35,4 +36,12 @@
 
 .bi-trash {
     color: rgb(107, 113, 128);
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+.completed .bi-check-lg {
+    color: green;
 }

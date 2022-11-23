@@ -20,7 +20,7 @@ const ToDoList = () => {
            <h1>My To-Do List</h1>
           </div>
           <TaskList tasks={tasks}/>
-          <button className='add-btn' onClick={handleModal}>+</button>
+          <button className='btn-add' onClick={handleModal}>+</button>
         </div>
         {isModalOpen && <Modal handleModal={handleModal}/>}
     </div>

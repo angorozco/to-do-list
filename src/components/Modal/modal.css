@@ -18,5 +18,44 @@
     width: 94%;
     background-color: #f5f5f8;
     border-radius: 1rem;
-    padding: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+.message {
+    width: 100%;
+    border-radius: 0.5rem;
+    border: solid 1px rgb(228, 227, 227);
+    outline: none;
+    padding: 0.5rem;
+    font-size: 0.7rem;
+    color: #838fe7;
+}
+
+.btn {
+    margin: 0 0.2rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    box-shadow: 0 3px 3px rgba(207, 207, 207, 0.733);
+    background-color: #f2f2fa;
+    border-radius: 0.3rem;
+    border: none;
+    background-color: #838fe7;
+    color: #f5f5f8;
+    font-size: 0.7rem;
+}
+
+.btn-close {
+    position: relative;
+    left: 90%;
+    margin-bottom: 0.3rem;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.btn-add-modal {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 1rem;
 }
