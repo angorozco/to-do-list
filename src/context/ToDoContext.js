@@ -16,7 +16,29 @@ const INITIAL_VALUE = [
 const ToDoProvider = ({ children }) => {
     const [tasks, setTasks] = useState(INITIAL_VALUE);
 
-    return <Provider value={{ tasks }}>{children}</Provider>;
+    const isInTasks = (id) => tasks.some((task) => task.id === id);
+
+    const handleTasks = (newTask) => {
+        if (isInTasks(newTask.id)) {
+            setTasks(
+                tasks.map((task) => {
+                    return task.id === newTask.id
+                        ? { ...task, content: newTask.content }
+                        : task;
+                })
+            );
+        } else {
+            setTasks([...tasks, newTask]);
+        }
+    };
+
+    const removeTask = (id) => setTasks(tasks.filter((task) => task.id !== id));
+
+    return (
+        <Provider value={{ handleTasks, removeTask, tasks }}>
+            {children}
+        </Provider>
+    );
 };
 
 export default ToDoProvider;
