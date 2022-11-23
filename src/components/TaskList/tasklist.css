@@ -1,0 +1,6 @@
+.task-list {
+    max-height: 400px;
+    overflow: auto;
+    padding-top: 1rem;
+    scrollbar-width: thin;
+}
